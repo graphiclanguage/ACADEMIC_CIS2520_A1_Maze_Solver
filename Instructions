@@ -1,0 +1,173 @@
+Your Task:
+
+	For this assignment you will use the list module you made for your lab 
+	assignment to build a stack module. You must write a program (a main) to 
+	thoroughly test your stack. You must write a second program that uses your
+	stack to create non-recursive maze solving program. The maze solving 
+	program must read a maze from a file and then print out the maze with the 
+	correct path traced through the maze.
+
+	You will be asked to hand in your code, your testing files, and your report
+	of your test results.
+
+Checklist:
+
+	Set up your folder structure (you can download the assignment starter zip
+	file if you like).
+
+	Your assignment must be in a folder that is named as follows:
+
+	the folder name must be LastnameFirstnameA1 (substituting in your last name
+	and first name of course). NO SPACES!
+	
+	inside the folder you must have a src subfolder, a bin subfolder, an 
+	include subfolder and a docs subfolder
+	
+	src contains your source .c files
+
+	include contains your header files (.h files)
+
+	bin is where your executables should be compiled to
+
+	docs is where you put your report about your testing
+
+	Write the makefile (or modify one of the sample makefiles) so that you can 
+	compile both the testing program and the maze solving program
+
+	Write the stack module first and its testing program. Make sure the stack 
+	is working and is well tested
+
+	You will need to read the maze from a file, so start by writing the part of
+	the program that reads the file
+	
+	Research maze solving algorithms on the internet. Be sure to cite any 
+	sources you use in helping to write your own. Remember that your solution 
+	cannot use recursion and must use your stack.
+
+	Create a simple maze text file and write your algorithm. When you can solve
+	a simple one, write a harder maze and find tune your algorithm.
+
+Musts:
+
+	You must meet the must requirements to get a mark greater than zero. If you
+	do not meet the musts, your assignment will be given a grade of zero.
+
+	Your solution must compile with -ansi -Wall with no errors or warnings
+
+	Your stack testing program and your maze solving program must run without 
+	crashing on the SOCS linux computers used for grading.
+
+	Your stack testing program must output information to the screen about 
+	which operations it is testing, and what the results are. It should not 
+	have a menu of choices, it should just run.
+
+	Your maze solving program must take the filename for the maze as an argv 
+	command line parameter.
+
+	Your submission must have a README.txt file that describes how to compile 
+	run your maze solver as well as the stack testing program. The readme file 
+	must contain your name and student number
+
+	Your solution must make use of a linked list module and a stack module.The 
+	Stack module can (and should) use the List module.
+
+	You must use a makefile for compiling the program (you do not have to write
+	the makefile from scratch, you can use one of the samples provided by the 
+	instructor and change filenames).
+	
+Shoulds:
+
+	If you complete all of the Shoulds and all of the Musts, it is possible for
+	your program to receive full marks.
+
+	Your maze solving program should output the solved maze to the screen.
+
+	Your linked list code and your stack code should provide all the necessary
+	operations for those two ADTs.
+
+	The two ADTs should be in separate .c files with separate .h files
+
+	All code should be properly documented and should show good adherence to 
+	the course coding conventions.
+
+	You should hand in a written discussion of the testing you did for both the
+	Stack module and a description of how you tested the maze solver. Please 
+	either hand in a plain text file or a pdf for this requirement.
+	
+	You should have your solution neatly organized into the folder structure 
+	discussed in the section on coding conventions for the class. (src/ bin/ 
+	include/ docs/)
+	
+Input File Format:
+
+	The input file will be a text file containing the maze. Starting position 
+	will be marked with an S. Ending position will be marked with an F. An 
+	example is shown below.
+
+		+-+-+-+-+-+-+-+-+-+-+
+		S   |       | |   | |
+		+-+ + +-+-+ + + + + +
+		| | |   |   |   |   |
+		+ + +-+ + +-+ + +-+-+
+		|       |   | | |   |
+		+ +-+-+-+-+ + +-+ + +
+		| |         |   | | |
+		+-+ +-+-+ +-+-+ + + +
+		|   |     | |   | | |
+		+ +-+ +-+-+ + + + +-+
+		|   |         | |   |
+		+-+ +-+-+ + +-+ +-+ +
+		| | |     | |   |   |
+		+ + + +-+-+-+ +-+ +-+
+		|   | |   |   |   | |
+		+-+-+ + + + +-+ +-+ +
+		| |   | | |     |   |
+		+ + + +-+ +-+-+-+ + +
+		|   |             | F
+		+-+-+-+-+-+-+-+-+-+-+
+		
+	Mazes will be no larger than 100x100 characters and may be as small as 
+	10x10. You can generate practise mazes on your own.
+
+Deliverables and Submission Requirements:
+
+	A single zip file containing the following:
+
+	Source code for queue module, list module, and maze solver
+
+	Readme file
+
+	Document discussing your testing and the results you found
+
+	Correctly working makefile for compiling everything
+
+	Name the zip file with your name: e.g. LastNameFirstnameA1.zip (NO SPACES)
+
+	Do not use any other form of compression, only zip. (no rar files no rz, 
+	gz, 7z, arg, cab, etc...). We will not mark your assignment if it is in any
+	compressed format other than zip.
+
+Grade Allocation:
+
+	This assignment is worth 10% of your final grade. It will be marked out of
+	100 points. No half marks will be given.
+
+	Stack Module (20)
+		Correctness (10)(provides correct operations)
+		Appropriate Design (10)
+	
+	List Module (10)
+		Appropriate Design (provides correct operations)
+
+	Maze Solving (25)
+		Correctness
+
+	Coding practises (20)
+		Comments and Source Code (structure, 
+		variable and operation naming conventions) (10)
+		File/folder organization and file naming conventions (5)
+		Working make file (5)
+		
+	Testing (25)
+		Stack Testing (20)
+		Maze Testing (5)

@@ -1,0 +1,14 @@
+Maze Testing:
+
+	A few of the mazes used for testing have been included in the docs folder.
+	The program has been tested to operate on mazes with zero, one, or
+	multiple solutions. Multiple starts are valid but multiple endings may
+	cause a printing error.
+	All known limitations will (potentially) cause errors but all have been
+	tested to be safely handled and prevent any undefined behaviours.
+
+Stack Testing:
+
+	Functions have been tested for correctness of functionality with any valid
+	inputs and correctness of error handling. Any hidden post conditions, ie.
+	memory freeing, have been tested manually through valgrind.
